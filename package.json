@@ -1,0 +1,63 @@
+{
+  "name": "astro-og-smart-crop",
+  "version": "0.1.0",
+  "description": "Astro integration and dev overlay that tests and adapts OpenGraph and Twitter card previews in development, evaluates platform-specific character and pixel limits to prevent truncation, and prompts Gemini Nano (window.ai.languageModel) to suggest high-impact headline and excerpt variants.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./middleware": {
+      "types": "./dist/middleware.d.ts",
+      "import": "./dist/middleware.js"
+    },
+    "./overlay": {
+      "types": "./dist/overlay.d.ts",
+      "import": "./dist/overlay.js"
+    },
+    "./limits": {
+      "types": "./dist/limits.d.ts",
+      "import": "./dist/limits.js"
+    },
+    "./nano-suggester": {
+      "types": "./dist/nano-suggester.d.ts",
+      "import": "./dist/nano-suggester.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts src/middleware.ts src/overlay.ts src/limits.ts src/nano-suggester.ts --outdir ./dist && bun x tsc --emitDeclarationOnly --outDir ./dist",
+    "test": "bun test",
+    "typecheck": "bun x tsc --noEmit"
+  },
+  "keywords": [
+    "astro",
+    "astro-integration",
+    "opengraph",
+    "twitter-card",
+    "social-preview",
+    "gemini-nano",
+    "chrome-ai",
+    "smart-crop",
+    "seo",
+    "meta-tags"
+  ],
+  "author": "bhubbard",
+  "license": "MIT",
+  "peerDependencies": {
+    "astro": ">=5.0.0 <8.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "astro": "^5.4.0",
+    "typescript": "^5.8.0"
+  }
+}
