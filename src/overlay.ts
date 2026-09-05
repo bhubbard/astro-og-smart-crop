@@ -21,7 +21,10 @@ export function initOGSmartCropOverlay(options: OverlayOptions = {}) {
   document.body.appendChild(overlayEl);
 }
 
-export class AstroOGSmartCropElement extends HTMLElement {
+const SafeHTMLElement =
+  typeof HTMLElement !== 'undefined' ? HTMLElement : (class {} as unknown as typeof HTMLElement);
+
+export class AstroOGSmartCropElement extends SafeHTMLElement {
   private shadow: ShadowRoot;
   private isOpen: boolean = false;
   private selectedSpecKey: string = 'twitter:summary_large_image';

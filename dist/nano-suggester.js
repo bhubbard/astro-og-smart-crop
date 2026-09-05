@@ -256,14 +256,14 @@ function smartTrim(text, maxChars) {
   return sub.trimEnd() + "…";
 }
 export {
-  smartTrim,
-  parseNanoResponse,
-  isGeminiNanoAvailable,
-  getGeminiNanoStatus,
-  generateTitleVariants,
-  generateOfflineTitleVariants,
-  generateOfflineDescriptionVariants,
-  generateDescriptionVariants,
+  buildNanoPrompt,
   generateCardOptimization,
-  buildNanoPrompt
+  generateDescriptionVariants,
+  generateOfflineDescriptionVariants,
+  generateOfflineTitleVariants,
+  generateTitleVariants,
+  getGeminiNanoStatus,
+  isGeminiNanoAvailable,
+  parseNanoResponse,
+  smartTrim
 };

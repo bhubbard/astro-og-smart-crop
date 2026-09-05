@@ -303,10 +303,10 @@ function evaluateAllPlatforms(title = "", description = "", imageSrc, imageAlt, 
   return results;
 }
 export {
-  evaluateTextTruncation,
-  evaluateImageAspect,
-  evaluateCard,
-  evaluateAllPlatforms,
+  PLATFORM_SPECS,
   estimateTextPixelWidth,
-  PLATFORM_SPECS
+  evaluateAllPlatforms,
+  evaluateCard,
+  evaluateImageAspect,
+  evaluateTextTruncation
 };

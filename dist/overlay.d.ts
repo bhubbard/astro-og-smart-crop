@@ -7,7 +7,11 @@ export interface OverlayOptions {
  * Initializes and mounts the dev overlay into the page.
  */
 export declare function initOGSmartCropOverlay(options?: OverlayOptions): void;
-export declare class AstroOGSmartCropElement extends HTMLElement {
+declare const SafeHTMLElement: {
+    new (): HTMLElement;
+    prototype: HTMLElement;
+};
+export declare class AstroOGSmartCropElement extends SafeHTMLElement {
     private shadow;
     private isOpen;
     private selectedSpecKey;
@@ -31,4 +35,5 @@ export declare class AstroOGSmartCropElement extends HTMLElement {
     private renderMockup;
     private attachEventListeners;
 }
+export {};
 //# sourceMappingURL=overlay.d.ts.map

@@ -752,8 +752,10 @@ function initOGSmartCropOverlay(options = {}) {
   const overlayEl = document.createElement("astro-og-smart-crop");
   document.body.appendChild(overlayEl);
 }
+var SafeHTMLElement = typeof HTMLElement !== "undefined" ? HTMLElement : class {
+};
 
-class AstroOGSmartCropElement extends HTMLElement {
+class AstroOGSmartCropElement extends SafeHTMLElement {
   shadow;
   isOpen = false;
   selectedSpecKey = "twitter:summary_large_image";
@@ -1695,6 +1697,6 @@ if (typeof window !== "undefined") {
   }
 }
 export {
-  initOGSmartCropOverlay,
-  AstroOGSmartCropElement
+  AstroOGSmartCropElement,
+  initOGSmartCropOverlay
 };

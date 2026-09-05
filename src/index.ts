@@ -4,7 +4,7 @@ import type { SocialPlatform } from './limits';
 export * from './limits';
 export * from './middleware';
 export * from './nano-suggester';
-export * from './overlay';
+export type { OverlayOptions, AstroOGSmartCropElement } from './overlay';
 
 export interface OGSmartCropOptions {
   /**
