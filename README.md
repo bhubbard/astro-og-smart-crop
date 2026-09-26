@@ -5,8 +5,11 @@
 [![Chrome AI](https://img.shields.io/badge/Chrome_AI-Gemini_Nano-4285F4.svg?style=flat&logo=googlechrome)](https://developer.chrome.com/docs/ai/built-in)
 [![Bun](https://img.shields.io/badge/Bun-1.3+-black.svg?style=flat&logo=bun)](https://bun.sh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-code.brandonhubbard.com-brightgreen?logo=github)](https://code.brandonhubbard.com/astro-og-smart-crop/)
 
 > **Astro integration & dev overlay that tests and adapts OpenGraph and Twitter card previews in development, evaluates platform-specific character and pixel limits to prevent truncation, and prompts Gemini Nano (`window.ai.languageModel`) to suggest high-impact headline and excerpt variants that strictly adhere to constraints.**
+
+> 🎮 **Live Interactive Visualizer & Demo:** [astro-og-smart-crop on code.brandonhubbard.com](https://code.brandonhubbard.com/astro-og-smart-crop/)
 
 ---
 
